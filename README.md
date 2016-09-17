@@ -6,7 +6,7 @@ Plays nice with sklearn classifiers, or any model classes that have both `.fit` 
 # Installation 
 Currently the package is not on PyPi, but is easy to install directly from github via `pip` using the following command.
 
-	pip install -e 'git+http://github.com/dustinstansbury/stacked_generalization.git#egg=stacked_generalization'
+	pip install -e 'git+http://github.com/stamate/stacked_generalization.git#egg=stacked_generalization'
 
 # Example usage
 
