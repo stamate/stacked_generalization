@@ -112,7 +112,7 @@ class StackedGeneralizer(object):
 		if self.verbose:
 			print('Fitting Base Models...')
 
-		kf = list(StratifiedKFold(y.shape[0], self.n_folds))
+		kf = list(StratifiedKFold(y, self.n_folds))
 
 		self.base_models_cv = {}
 
@@ -166,7 +166,7 @@ class StackedGeneralizer(object):
 			model_name = "%s" % self.blending_model.__repr__()
 			print('Fitting Blending Model:\n%s' % model_name)
 
-		kf = list(StratifiedKFold(y.shape[0], self.n_folds))
+		kf = list(StratifiedKFold(y, self.n_folds))
 		# run  CV 
 		self.blending_model_cv = []
 
